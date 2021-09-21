@@ -24,6 +24,7 @@ provider:
   name: aws
   runtime: python2.7
   lambdaHashingVersion: 20201221
+  region: eu-west-3
 
 # you can overwrite defaults here
 #  stage: dev
