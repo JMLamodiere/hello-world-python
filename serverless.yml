@@ -25,6 +25,8 @@ provider:
   runtime: python3.9
   lambdaHashingVersion: 20201221
   region: eu-west-1
+  memorySize: 512
+  timeout: 2
 
 # you can overwrite defaults here
 #  stage: dev
@@ -63,11 +65,10 @@ package:
 functions:
   hello-short-timeout:
     handler: handler.hello
-    memorySize: 128
-    timeout: 3
   hello-long-timeout:
-    memorySize: 256
     handler: handler.hello
+    memorySize: 256
+    timeout: 6
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
