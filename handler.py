@@ -1,3 +1,7 @@
+import time
+
 def hello(event, context):
-    print("first update!")
+    print("before sleep")
+    time.sleep(4)
+    print("after sleep")
     return "hello-world"
